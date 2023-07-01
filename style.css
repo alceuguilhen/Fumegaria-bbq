@@ -6,6 +6,12 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root {
@@ -13,7 +19,7 @@
     --cor02: #140a0a;
     --cor03: #fffaf5;
 
-    --fonte01: 'Bebas Neue', sans-serif;
+    --fonte01: 'bebas', sans-serif;
     --fonte02: 'cheddar', cursive;
     --fonte03: 'Roboto Condensed', sans-serif;
 }
@@ -50,26 +56,31 @@ nav {
     font-size: 4vw;
     font-variant: small-caps;
     text-decoration: none;
+    transition-duration: 0.5s;
     color: var(--cor03);
     padding-left: 3vw;
+}
+
+.nav > a:hover {
+    color: var(--cor01);
 }
 
 article {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 article h1 {
     font-family: var(--fonte02);
-    font-size: 4em;
+    font-size: 7vw;
     color: var(--cor01);
 }
 
 article > p {
-    font-size: 1.5em;
+    font-size: 3.5vw;
     color: var(--cor03);
     padding: 20px 0px;
 }
@@ -84,9 +95,14 @@ article > p {
 .topo, #botao a {
     font-family: var(--fonte01);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 3.5vw;
     text-decoration: none;
+    transition-duration: 0.5s;
     color: var(--cor03);
+}
+
+#botao a:hover {
+    color: var(--cor02);
 }
 
 section.img {
@@ -94,22 +110,22 @@ section.img {
 }
 
 section#img01 {
-    background-image: url("img/home.jpg");
+    background-image: url("img/home-pq.jpg");
     background-position: center center;
 }
 
 section#img02 {
-    background-image: url('img/fumegaria.jpg');
+    background-image: url('img/fumegaria-pq.jpg');
     background-position: center center;
 }
 
 section#img03 {
-    background-image: url('img/horario.jpg');
+    background-image: url('img/horario-pq.jpg');
     background-position: center center;
 }
 
 section#img04 {
-    background-image: url('img/contato01.jpg');
+    background-image: url('img/contato-pq.jpg');
 }
 
 .redes ul {
@@ -126,7 +142,7 @@ section#img04 {
 }
 
 .horario > p {
-    font-size: 1.5em;
+    font-size: 3.5vw;
     color: var(--cor03);
 }
 
