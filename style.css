@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "cheddar";
+    src: url("fonts/cheddar/CheddarGothic-Serif.otf") format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --cor01: #f29a2e;
+    --cor02: #140a0a;
+    --cor03: #fffaf5;
+
+    --fonte01: 'Bebas Neue', sans-serif;
+    --fonte02: 'cheddar', cursive;
+    --fonte03: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor02);
+    font-family: var(--fonte01);
+}
+
+header {
+    background-color: #140a0a8f;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav > a {
+    font-family: var(--fonte02);
+    font-size: 4vw;
+    font-variant: small-caps;
+    text-decoration: none;
+    color: var(--cor03);
+    padding-left: 3vw;
+}
+
+article {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+article h1 {
+    font-family: var(--fonte02);
+    font-size: 4em;
+    color: var(--cor01);
+}
+
+article > p {
+    font-size: 1.5em;
+    color: var(--cor03);
+    padding: 20px 0px;
+}
+
+#botao {
+    display: inline-block;
+    background-color: var(--cor01);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.topo, #botao a {
+    font-family: var(--fonte01);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--cor03);
+}
+
+section.img {
+    background-size: cover;
+}
+
+section#img01 {
+    background-image: url("img/home.jpg");
+    background-position: center center;
+}
+
+section#img02 {
+    background-image: url('img/fumegaria.jpg');
+    background-position: center center;
+}
+
+section#img03 {
+    background-image: url('img/horario.jpg');
+    background-position: center center;
+}
+
+section#img04 {
+    background-image: url('img/contato01.jpg');
+}
+
+.redes ul {
+    display: flex;
+}
+
+.redes li {
+    padding-right: 10px;
+    list-style: none;
+}
+
+.horario {
+    text-align: right;
+}
+
+.horario > p {
+    font-size: 1.5em;
+    color: var(--cor03);
+}
+
+footer {
+    background-color: var(--cor02);
+    color: var(--cor03);
+    font-family: var(--fonte03);
+    text-align: center;
+    padding: 20px;    
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor03);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer > p {
+    margin: auto;
+}
+
